@@ -1,11 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Trabaja con nosotros - Tienda de te</title>
-        <link href="css/styles.css" rel="stylesheet">
-    </head>
-    <body>
-        
-    </body>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Trabaja con nosotros - Tienda de te</title>
+		<link href="css/styles.css" rel="stylesheet" />
+		<link rel="icon" href="imagenes/tienda-de-cafe.png" type="image/png" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+		/>
+	</head>
+	<body>
+		<script src="js/includes.js"></script>
+		<div id="include-header"></div>
+
+		<div class="container">
+			<div class="container-titulo">
+				<p class="p-titulo">SUMATE A NUESTRO EQUIPO</p>
+				<h1>TRABAJÁ EN TDT</h1>
+				<p>
+					Si querés formar parte de Tienda de Te envianos tu datos y adjunta tu
+					CV
+				</p>
+			</div>
+
+			<form action="" method="post" class="work-with-us-form">
+				<div class="div-form">
+					<div class="item-form">
+						<label for="firstname">Nombre</label>
+						<input type="text" id="firstname" name="firstname" required />
+					</div>
+					<div class="item-form">
+						<label for="lastname">Apellido</label>
+						<input type="text" id="lastname" name="lastname" required />
+					</div>
+					<div class="item-form">
+						<label for="email">E-mail</label>
+						<input type="email" id="email" name="email" required />
+					</div>
+					<div class="item-form">
+						<label for="tel">Telefono</label>
+						<input type="tel" id="tel" name="tel" required />
+					</div>
+					<div class="item-form">
+						<label for="puesto">¿Cuál es tu puesto de trabajo?</label>
+						<input type="text" id="puesto" name="puesto" required />
+					</div>
+					<div class="item-form">
+						<label for="sucursales">¿Cuál es tu sucursal de preferencia?</label>
+						<select id="sucursales" name="sucursales" required>
+							<option value=""></option>
+							<option value=""></option>
+							<option value=""></option>
+							<option value=""></option>
+							<option value=""></option>
+						</select>
+					</div>
+					<div class="item-form">
+						<label for="curriculum">Adjuntar CV</label>
+						<input type="file" id="curriculum" name="curriculum" required />
+					</div>
+				</div>
+				<div class="item-form">
+					<label for="mensaje">Mensaje</label>
+					<textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea>
+				</div>
+				<button class="submit" type="submit">ENVIAR</button>
+			</form>
+		</div>
+		<footer>
+			<div id="include-footer"></div>
+		</footer>
+	</body>
 </html>
