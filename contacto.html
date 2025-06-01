@@ -1,22 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contacto - Tienda de te</title>
-        <link href="css/styles.css" rel="stylesheet">
-        <link rel="icon" href="imagenes/tienda-de-cafe.png" type="image/png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    </head>
-    <body>
-        <script src="js/includes.js"></script>
-        <div id="include-header"></div>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contacto - Tienda de te</title>
+		<link href="css/styles.css" rel="stylesheet" />
+		<link rel="icon" href="imagenes/tienda-de-cafe.png" type="image/png" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+		/>
+	</head>
+	<body>
+		<script src="js/includes.js"></script>
+		<div id="include-header"></div>
 
+		<main>
+			<section class="seccion-contacto">
+				<h2>Contáctanos</h2>
+				<p>Completá el formulario y envianos tu consulta.</p>
+				<img src="imagenes/tazadete.png" alt="Taza de té" />
+			</section>
+			<section>
+				<form action="/enviar-formulario" method="post" class="form-contacto">
+					<div class="campo-formulario icono-input">
+						<i class="fa fa-user"></i>
+						<input
+							type="text"
+							id="nombre"
+							name="nombre"
+							placeholder="Nombre"
+							required
+						/>
+					</div>
 
+					<div class="campo-formulario icono-input">
+						<i class="fa fa-envelope"></i>
 
-        
-        <footer>
-            <div id="include-footer"></div>
-        </footer>
-    </body>
+						<input
+							type="email"
+							id="email"
+							name="email"
+							placeholder="Correo electrónico"
+							required
+						/>
+					</div>
+
+					<div class="campo-formulario icono-input">
+						<i class="fa fa-comment-dots"></i>
+						<textarea
+							id="mensaje"
+							name="mensaje"
+							placeholder="Escribe tu mensaje"
+							rows="5"
+							required
+						></textarea>
+					</div>
+
+					<div class="campo-formulario">
+						<button type="submit" class="btn-contacto">
+							<i class="fa fa-paper-plane"></i>Enviar
+						</button>
+					</div>
+				</form>
+			</section>
+		</main>
+
+		<footer>
+			<div id="include-footer"></div>
+		</footer>
+	</body>
 </html>
