@@ -114,6 +114,86 @@ body.index-page {
   font-weight: 700;
 }
 
+.seccion-dos-imagenes {
+  display: flex;
+  gap: 35px; 
+  justify-content: center; 
+  margin-top: 30px; 
+}
+
+.seccion-dos-imagenes .imagen-link {
+  position: relative; 
+  display: block;
+  width: 45%; 
+  overflow: hidden; 
+  border-radius: 2px; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;  
+}
+
+.seccion-dos-imagenes .imagen-link img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.seccion-dos-imagenes .imagen-link:hover img {
+  transform: scale(1.05); 
+}
+
+.seccion-dos-imagenes .imagen-link:hover {
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.seccion-dos-imagenes .texto-superpuesto {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+  margin: 0;
+  background: transparent; 
+  text-align: left;
+  margin-top: 3rem;
+}
+
+.hero-secundario {
+  background-image: url('../imagenes/menu-tienda/menu-tienda-bg.jpg'); /* ⚠️ reemplazá por el nombre real */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-top: 5rem;
+}
+
+.hero-texto.centrado {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-shadow: 1px 1px 6px black;
+  color: white;
+}
+
+.hero-texto.centrado p {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  color: white;
+  
+}
+
+
 
 
 /*          FRANQUICIAS       */
